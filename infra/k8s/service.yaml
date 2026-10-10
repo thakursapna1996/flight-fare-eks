@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flight-fare-api
+  namespace: flight-fare
+  labels:
+    app.kubernetes.io/name: flight-fare-api
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: flight-fare-api
+  ports:
+    - name: http
+      port: 80
+      targetPort: http

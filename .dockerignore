@@ -1,0 +1,17 @@
+.git
+.github
+.venv
+venv
+env
+__pycache__
+*.pyc
+tests
+notebooks
+data
+infra
+*.md
+.flake8
+pytest.ini
+requirements-dev.txt
+.gitattributes
+.gitignore
