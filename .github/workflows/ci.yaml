@@ -43,7 +43,7 @@ jobs:
         run: docker build -t flight-fare:ci .
 
       - name: Scan image for vulnerabilities (Trivy)
-        uses: aquasecurity/trivy-action@0.24.0
+        uses: aquasecurity/trivy-action@0.35.0
         with:
           image-ref: flight-fare:ci
           format: table

@@ -4,8 +4,8 @@ name: CD
 # Authentication is via GitHub OIDC -> an IAM role (no long-lived AWS keys
 # stored in GitHub). Set the repo variables/secrets referenced below first.
 on:
-  push:
-    branches: [main]
+  #push:
+    #branches: [main]
   workflow_dispatch:
 
 permissions:
